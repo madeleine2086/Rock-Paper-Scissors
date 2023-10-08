@@ -31,3 +31,18 @@ function generateComputerChoice() {
     }
 }
 
+function generateResult() {
+    if(player == computer) {
+        return: "Draw!";
+    }
+    else if(computer == "PAPER") {
+        return (player == "SCISSORS") ? "You Lose!" : "You're a Winner!"
+    }
+    else if(computer == "ROCK") {
+        return (player == "PAPER") ? "You Lose!" : "You're a Winner!"
+    }
+    else if(computer == "SCISSORS") {
+        return (player == "ROCK") ? "You Lose!" : "You're a Winner!"
+    }
+}
+
