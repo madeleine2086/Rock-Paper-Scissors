@@ -15,10 +15,19 @@ for (let button of buttons) {
     })
 }
 
-function computerPick() {
-
+function generateComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    if (randomNumber === 1) {
+        computer = "paper"
+    }
+    if (randomNumber === 2) {
+        computer = "rock"
+    }
+    if (randomNumber === 3) {
+        computer = "scissors"
+    }
 }
 
 function checkResult() {
-    
+
 }
