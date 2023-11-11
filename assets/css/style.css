@@ -1,3 +1,106 @@
-#mainDiv {
-    background-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=PT+Serif&display=swap');
+
+body {
+    background-image: url(./assets/images/many-human-hands-simple-illustration_185757-1278.avif);
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    text-align: center;
+    max-height: 100%;
+}
+
+h1 {
+    font-size: 100%;
+    background-color: rgba(245, 245, 220, 0.8);
+}
+
+h3 {
+    font-size: 70%;
+}
+
+footer {
+    position: absolute;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60%;
+    text-align: left;
+}
+
+header {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-div {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 75%;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.players {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player {
+    text-align: center;
+}
+
+.player-choice {
+    padding: 20px;
+}
+
+.game-result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-button {
+    font-size: 60px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.no-display {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+/* Media query for large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    .result {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 100%;
+        text-align: center;
+    }
 }
