@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=PT+Serif&display=swap');
 
 body {
-    background-image: url(./assets/images/many-human-hands-simple-illustration_185757-1278.avif);
+    background-image: url("../images/many-human-hands-simple-illustration_185757-1278.avif");
     font-family: 'Lora', serif;
     font-size: 30px;
     text-align: center;
