@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +10,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="header">
         <h1>Rock Paper Scissors</h1>
@@ -21,36 +19,35 @@
         <p>Scissors cut Paper | Paper covers Rock | Rock blunts Scissors</p>
     </header>
     <div>
-        <div class="game-div">
-            <div class="players">
-                <div class="player">
-                    <h3>You</h3>
-                    <span id="player-score">0</span>
-                </div>
-                <div class="player">
-                    <h3>Computer</h3>
-                    <span id="computer-score">0</span>
-                </div>
+    <div class="game-div">
+        <div class="players">
+            <div class="player">
+                <h3>You</h3>
+                <span id="player-score">0</span>
             </div>
-            <div class="player-choice">
-                <button aria-label="Rock" id="rock" class="button user-button far fa-hand-back-fist"></button>
-                <button aria-label="Paper" id="paper" class="button user-button far fa-hand-paper"></button>
-                <button aria-label="Scissors" id="scissors" class="button user-button far fa-hand-scissors"></button>
+            <div class="player">
+                <h3>Computer</h3>
+                <span id="computer-score">0</span>
             </div>
-            <div class="game-result">
-                <span id="winner"></span>
-                <div id="result" class="no-display">
-                    <button id="player-result" class="user-button far"></button>
-                    <span>VS</span>
-                    <button id="computer-result" class="user-button far"></button>
-                </div>
+        </div>
+        <div class="player-choice">
+            <button aria-label="Rock" id="rock" class="button user-button far fa-hand-back-fist"></button>
+            <button aria-label="Paper" id="paper" class="button user-button far fa-hand-paper"></button>
+            <button aria-label="Scissors" id="scissors" class="button user-button far fa-hand-scissors"></button>
+        </div>
+        <div class="game-result">
+            <span id="winner"></span>
+            <div id="result" class="no-display">
+                <button id="player-result" class="user-button far"></button>
+                <span>VS</span>
+                <button id="computer-result" class="user-button far"></button>
             </div>
         </div>
     </div>
-    <script src="assets/javascript/script.js"></script>
-    <footer>
+    </div>
+    <script src="script.js"></script>   
+    <footer>       
         <h2>Select a symbol to play again!</h2>
     </footer>
 </body>
-
 </html>

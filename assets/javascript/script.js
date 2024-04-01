@@ -13,29 +13,29 @@ const play = () => {
     let userChoice = "";
     let time = 3;
 
-    /**This function is responsible for playing the game
-     * Add event listener to the buttons
-     * set the timer
-     */
+        /**This function is responsible for playing the game
+         * Add event listener to the buttons
+         * set the timer
+         */
     const startPlaying = () => {
         allButtons.forEach(user => {
             user.addEventListener("click", () => {
-                prepareToPlay(user);
-                let timeInterval = setInterval(() => {
-                    if (time === 0) {
-                        clearInterval(timeInterval);
-                        let computer = Math.floor(Math.random() * 3);
-                        playerAndComputerDisplay(user.id, allButtons[computer].id);
-                        checkWinner(user.id, allButtons[computer].id);
-                        resultSection.classList.add('result');
-                    } else {
-                        winner.textContent = time;
-                        time--;
-                    }
-                }, 800);
+            prepareToPlay(user);
+            let timeInterval = setInterval(() => {
+                if (time === 0) {
+                    clearInterval(timeInterval);
+                    let computer = Math.floor(Math.random() * 3);
+                    playerAndComputerDisplay(user.id, allButtons[computer].id);
+                    checkWinner(user.id, allButtons[computer].id);
+                    resultSection.classList.add('result');
+                } else {
+                    winner.textContent = time;
+                    time--;
+                }
+            }, 800);
             });
         });
-    };
+    }
     //function is displaying players choices.
     playerAndComputerDisplay = (user, computer) => {
         playerResult.classList.remove('fa-hand-' + userChoice);
